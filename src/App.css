@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 100%;
 }
 
 .App-header {
@@ -16,6 +17,36 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  width: min(900px, 100%);
+  margin: 1.5rem auto;
+}
+
+.feature-card {
+  background: rgba(97, 218, 251, 0.12);
+  border: 1px solid rgba(97, 218, 251, 0.32);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.feature-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .App-link {

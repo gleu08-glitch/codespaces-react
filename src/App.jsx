@@ -4,7 +4,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
+        <img
+          src="Octocat.png"
+          className="App-logo"
+          alt="logo"
+          width="512"
+          height="426"
+          decoding="async"
+        />
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
